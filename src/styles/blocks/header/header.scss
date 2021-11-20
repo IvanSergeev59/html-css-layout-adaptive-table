@@ -3,10 +3,12 @@
 
 $width: 100%;
 $margin-center: 0 auto;
+$margin-top: 40px;
 header {
     height: 100px;
     width: 92.59%;
     margin: $margin-center;
     display: flex;
     position: relative;
+    margin-top: $margin-top;
 }

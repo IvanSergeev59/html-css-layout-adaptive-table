@@ -1,8 +1,11 @@
-.header__form{
+@import "_input/header__form_input.scss";
+
+header form{
     width: 22.22%;
     background: #FFFFFF;
     border: 1px solid rgba(34, 62, 105, 0.1);
     box-sizing: border-box;
     border-radius: 5px;
     height: 40px;
+    
 }

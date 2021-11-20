@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Ivan Sergeev"> 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
   <body>
     <div class="root">
         <header>
-            <form class="header__form" type="text" value="ololo" >                
+            <form class="header__form">
+              <input class="header__form_input" type="text" placeholder="Поиск по запросу">                
             </form>
-            <button class="header__button">iPhone/iPod</button>
-            <button class="header__button">iPad</button>
+            <button><p>iPhone/iPod</p></button>
+            <button><p class="inactive">iPad</p></button>
+            <button class="button-download"><p class="header__button-download_p">Скачать .CSV</p></button>
+            <button class="button-download add-button"><p class="header__button-added_p">Добавить запрос</p></button>
         </header>
     </div>
   </body>

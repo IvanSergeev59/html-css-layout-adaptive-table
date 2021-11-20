@@ -1,4 +1,49 @@
-.header__button {
+@import "_p/header__button-download_p.scss";
+@import "_p/header__button-added_p.scss";
+
+$font-family: "Source Sans Pro";
+
+header button {
     height: 40px;
     width: 9.722%;
+    background: #FFFFFF;
+    border: 1px solid rgba(34, 62, 105, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+
+
+header button:first-of-type {
+    margin-left: 2%;
+}
+
+
+header .button-download {
+  margin-left: 19.9%;
+  width: 14.2%;
+}
+
+header .button-download:last-of-type {
+    margin-left: 2%;
+    width: 16.9%;
+  }
+
+button p {
+    font-family: $font-family;
+    margin: 0 auto;
+    color: rgba(17, 34, 62, 1);
+    font-size: 14px;
+    line-height: 9px;
+}
+
+button .inactive {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+header .add-button {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(252, 57, 105, 1);
 }
