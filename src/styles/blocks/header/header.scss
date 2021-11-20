@@ -1,0 +1,12 @@
+@import "__form/header__form.scss";
+@import "__button/header__button.scss";
+
+$width: 100%;
+$margin-center: 0 auto;
+header {
+    height: 100px;
+    width: 92.59%;
+    margin: $margin-center;
+    display: flex;
+    position: relative;
+}

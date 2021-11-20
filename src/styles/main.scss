@@ -1,7 +1,12 @@
+@import "blocks/header/header.scss";
+
 $font-size: 1rem;
 $font-color: lch(53 105 40);
 
-html {
+.root {
     font-size: $font-size;
     color: $font-color;
+    margin: $margin-center;
+    width: 88.8%;
 }
+

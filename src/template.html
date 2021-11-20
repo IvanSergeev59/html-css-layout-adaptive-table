@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ivan Sergeev"> 
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="root">
+        <header>
+            <form class="header__form" type="text" value="ololo" >                
+            </form>
+            <button class="header__button">iPhone/iPod</button>
+            <button class="header__button">iPad</button>
+        </header>
+    </div>
   </body>
 </html>

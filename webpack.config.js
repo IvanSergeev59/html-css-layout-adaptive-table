@@ -24,7 +24,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'webpack Boilerplate',
+            title: 'html-css-layout-adaptive-table',
             template: path.resolve(__dirname, './src/template.html'), // шаблон
             filename: 'index.html', // название выходного файла
         }),
