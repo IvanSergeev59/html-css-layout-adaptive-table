@@ -1,0 +1,38 @@
+.status__image {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    margin-left: 2.5%;
+    height: 40%;
+    margin-top: 12px;
+}
+
+.status__image img{
+    width:14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    margin-top:2px;
+    box-sizing: border-box;
+}
+
+.status__image div {
+    display: flex;
+   
+    flex-direction: row;
+}
+
+
+.status__image p {
+    margin: 0 auto;
+    margin-left: 10px;
+    display: flex;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 9px;
+    color: #11223E;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    height: 16px;
+    align-items: center;
+}

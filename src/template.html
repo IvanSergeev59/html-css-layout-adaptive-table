@@ -14,11 +14,82 @@
             <form class="header__form">
               <input class="header__form_input" type="text" placeholder="Поиск по запросу">                
             </form>
-            <button><p>iPhone/iPod</p></button>
-            <button><p class="inactive">iPad</p></button>
-            <button class="button-download"><p class="header__button-download_p">Скачать .CSV</p></button>
-            <button class="button-download add-button"><p class="header__button-added_p">Добавить запрос</p></button>
+            <button>iPhone/iPod</button>
+            <button class="inactive">iPad</button>
+            <button class="button-download">Скачать .CSV</button>
+            <button class="button-download add-button">Добавить запрос</button>
         </header>
+        <section class="content">
+          <section class="status">
+            <div class="status__success">
+              <p>
+                45% в ТОП-3
+              </p>              
+            </div>
+            <div class="status__image">
+              <div>
+                <img src="<%=require('./images/icon.png')%>" alt="status">  <p>Вы недополучаете 450 инсталлов в день</p>
+
+              </div>
+            </div>        
+          </section>
+          <section class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div></div>
+                    <img src="<%=require('./images/trash.png')%>" alt="trash">
+                    <img src="<%=require('./images/refresh.png')%>" alt="refresh">
+                    <img src="<%=require('./images/rocket.png')%>" alt="rocket">
+                  </th>
+                  <th class="table__second-th"><p>Оценка частотн.</p><img src="<%=require('./images/path 8.png')%>" alt="path 8"></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="table__second-td"><p>Оценка частотн.</p></td>
+                </tr>
+              </thead>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th class="table__th">25.06</th>      
+                  <th class="table__th">26.06</th>  
+                  <th class="table__th">27.06</th>  
+                  <th class="table__th">28.06</th>  
+                  <th class="table__th">30.06</th>     
+                  <th class="table__th">01.07</th>   
+                  <th class="table__th">02.07</th>   
+                  <th class="table__th">03.07</th>    
+                  <th class="table__th">04.07</th> 
+                  <th class="table__th">05.07</th> 
+                  <th class="table__th">06.07</th> 
+                  <th class="table__th">07.07</th>   
+                  <th class="table__th">08.07</th> 
+                </tr>
+                <tr>
+                
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                  <td class="table__td">25.06</td>
+                </tr>
+              </thead>
+            </table>
+          </section>
+        </section>
     </div>
+    
   </body>
 </html>

@@ -1,3 +1,4 @@
-import death from './images/death.png'
+
+import icon from './images/icon.png'
 import './styles/main.scss'
 

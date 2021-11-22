@@ -1,0 +1,106 @@
+@import "__th/table__th.scss";
+@import "__td/table__td.scss";
+@import "__second-td/table__second-td.scss";
+.table {
+    width: 92.59%;  
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+  
+    & table:first-of-type {
+        width: 37.5%;    
+        color: #11223E;
+        mix-blend-mode: normal;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        & tr {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & th:first-of-type {
+            width: 75.45%;
+            flex-direction: row;
+            justify-content: left;
+            display: flex;
+
+            & div {
+                background: #223E69;
+                mix-blend-mode: normal;
+                opacity: 0.3; 
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+                border:0px;
+                align-self: center;
+                margin-left: 14px;
+                margin-right: 5px;
+            }
+
+            & img {
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                margin-left: 15px;
+            }
+        }
+        & th {
+            width: 24.5%;
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+
+            & img {
+                margin-left: 6px;
+                width: 6px;
+                height: 3px;
+                align-self: center;
+            }
+        & p {
+            width: 45px;
+            text-align: center;
+        }
+        }
+        & td {
+            width: 24.5%;
+            border: 1px solid #e8e8e8;;
+        }
+    
+        & td:first-of-type {
+            width: 75.45%;
+            flex-direction: row;
+            justify-content: left;
+            display: flex;
+        }        
+      
+    }
+
+    & table {
+        width: 62.5%;    
+        color: #11223E;
+        mix-blend-mode: normal;
+        font-family: "Source Sans Pro";
+        text-align: center;
+    }
+
+
+    & th {
+        border: 1px solid #e8e8e8;
+        font-size: 12px;
+        line-height: 15px;
+        mix-blend-mode: normal;
+        opacity: 0.3;   
+        height: 50px;
+    }
+
+  
+
+
+   
+
+    &__cell {
+        
+    
+    }
+}
