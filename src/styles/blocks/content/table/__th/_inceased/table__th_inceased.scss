@@ -1,0 +1,40 @@
+@media (min-width: 1200px) {
+    .table__th_inceased {
+        background: rgba(117, 185, 38, 0.3);
+        mix-blend-mode: normal;
+        border-radius: 3px;
+        font-size: 10px;
+        line-height: 8px;
+        margin: 0 auto;
+        margin-top: 7px;
+        width: 22px;
+        font-weight: 100;
+        color: rgba(53, 91, 8, 1);
+
+    }
+        .white{
+            background: white;
+            color: white;
+        }
+}
+
+@media (min-width: 768px) {
+    .table__th_inceased {
+        background: rgba(117, 185, 38, 0.3);
+        mix-blend-mode: normal;
+        border-radius: 3px;
+        font-size: 10px;
+        line-height: 8px;
+        margin: 0 auto;
+        margin-top: 7px;
+        width: 22px;
+        font-weight: 100;
+        color: rgba(53, 91, 8, 1);
+
+    }
+        .white{
+            background: white;
+            color: white;
+        }
+}
+

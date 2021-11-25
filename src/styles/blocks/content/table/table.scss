@@ -1,106 +1,416 @@
 @import "__th/table__th.scss";
 @import "__td/table__td.scss";
-@import "__second-td/table__second-td.scss";
-.table {
-    width: 92.59%;  
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: space-between;
-  
-    & table:first-of-type {
-        width: 37.5%;    
-        color: #11223E;
-        mix-blend-mode: normal;
-        font-family: "Source Sans Pro";
-        text-align: center;
-        & tr {
-            display: flex;
-            flex-direction: row;
-        }
+@import "__opened-td/table__opened-td.scss";
+@import "__opened-tr/table__opened-tr.scss";
 
-        & th:first-of-type {
-            width: 75.45%;
-            flex-direction: row;
-            justify-content: left;
-            display: flex;
-
-            & div {
-                background: #223E69;
-                mix-blend-mode: normal;
-                opacity: 0.3; 
-                border-radius: 5px;
-                width: 20px;
-                height: 20px;
-                border:0px;
-                align-self: center;
-                margin-left: 14px;
-                margin-right: 5px;
-            }
-
-            & img {
-                width: 20px;
-                height: 20px;
-                align-self: center;
-                margin-left: 15px;
-            }
-        }
-        & th {
-            width: 24.5%;
-            flex-direction: row;
-            justify-content: center;
-            display: flex;
-
-            & img {
-                margin-left: 6px;
-                width: 6px;
-                height: 3px;
-                align-self: center;
-            }
-        & p {
-            width: 45px;
-            text-align: center;
-        }
-        }
-        & td {
-            width: 24.5%;
-            border: 1px solid #e8e8e8;;
-        }
-    
-        & td:first-of-type {
-            width: 75.45%;
-            flex-direction: row;
-            justify-content: left;
-            display: flex;
-        }        
-      
-    }
-
-    & table {
-        width: 62.5%;    
-        color: #11223E;
-        mix-blend-mode: normal;
-        font-family: "Source Sans Pro";
-        text-align: center;
-    }
-
-
-    & th {
-        border: 1px solid #e8e8e8;
-        font-size: 12px;
-        line-height: 15px;
-        mix-blend-mode: normal;
-        opacity: 0.3;   
-        height: 50px;
-    }
-
-  
-
-
-   
-
-    &__cell {
+@media (min-width: 1200px) {
+    .table {
+        width: 92.59%;  
+        display: flex;        
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 40px;
         
     
+        & table:first-of-type {
+            width: 37.5%;    
+            color: #11223E;
+            mix-blend-mode: normal;
+            font-family: "Source Sans Pro";
+            text-align: center;
+            margin: 0px;
+            border-left: 1px solid rgba(34, 62, 105, .2); 
+            border-bottom: 1px solid rgba(34, 62, 105, .2);
+            display: flex;
+            
+            & thead {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            & tr {
+                display: flex;
+                flex-direction: row;          
+                border-top: 1px solid rgba(34, 62, 105, .2); 
+                border-right: 1px solid rgba(34, 62, 105, .2);
+            }
+
+            & th:first-of-type {
+                width: 75.45%;
+                flex-direction: row;
+                justify-content: left;
+                display: flex;
+                border-right: 1px solid rgba(34, 62, 105, .2);
+
+                & div {
+                    background: rgba(34, 62, 105, .1);
+                    mix-blend-mode: normal;
+                    border-radius: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border:0px;
+                    align-self: center;
+                    margin-left: 14px;
+                    margin-right: 5px;
+                    color: rgba(34, 62, 105, .0);
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    & .selected {
+                        color:rgba(53, 91, 8, 1);
+                        background: rgba(34, 62, 105, .0);
+                    }
+                    
+                }
+
+                & img {
+                    width: 20px;
+                    height: 20px;
+                    align-self: center;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+            }
+            & th {
+                width: 24.5%;
+                flex-direction: row;
+                justify-content: center;
+                display: flex;
+                margin: 0px;
+                color: rgba(17, 34, 62, .3);
+                font-weight: 100;
+                
+
+                & img {
+                    margin-left: 6px;
+                    width: 6px;
+                    height: 3px;
+                    align-self: center;
+                    cursor: pointer;
+                }
+            & p {
+                width: 45px;
+                text-align: center;
+            }
+            }
+            & td {
+                width: 24.5%;
+                font-family: $font-family;
+                font-size: 14px;
+                line-height: 8px;
+                color: #11223E;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                
+
+                & .table__second-td_squade {
+                    background: rgba(34, 62, 105, .1);
+                    mix-blend-mode: normal;
+                    border-radius: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border:0px;
+                    align-self: center;
+                    margin-left: 14px;
+                    margin-right: 20px;
+                    color: rgba(34, 62, 105, 0);
+                    justify-content: center;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                
+                }
+                & p {
+                    
+                    align-self: center;
+                }
+                & img {
+                    align-self: center;
+                    cursor: pointer;
+                }
+                & .table__second-td_star {
+                    margin-left: 34px;
+                    width: 14px;
+                    height: 14px;
+                    }
+
+                & .table__second-td_arrow-to-right {
+                        margin-left: 8px;
+                        width: 6px;
+                        height: 10px;
+                    }
+                
+            }
+        
+            & td:first-of-type {
+                width: 75.45%;
+                flex-direction: row;
+                justify-content: left;
+                display: flex;
+                border-right: 1px solid rgba(34, 62, 105, .2);
+            }        
+        
+        }
+
+        & table {
+            width: 62.5%;    
+            color: #11223E;
+            mix-blend-mode: normal;
+            font-family: "Source Sans Pro";
+            text-align: center;
+            display: flex;
+            border-bottom: 1px solid rgba(34, 62, 105, .1);
+            
+            & thead {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+        
+            
+            & th {       
+                font-size: 12px;
+                line-height: 15px;
+                mix-blend-mode: normal;
+                display: flex; 
+                color: rgba(17, 34, 62, .3);  
+                font-weight: 200;         
+            }
+
+            & td {
+                font-family: $font-family;
+                font-size: 14px;
+                line-height: 8px;
+                color: #11223E;
+            }
+
+            & tr {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                border-top: 1px solid rgba(34, 62, 105, .1); 
+                border-right: 1px solid rgba(34, 62, 105, .1);
+            }
+        } 
+    
+    }
+
+    .selected {
+        color:rgba(53, 91, 8, 1) !important;
+        background: rgba(34, 62, 105, .0) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .table {
+        width: 92.59%;  
+        display: flex;        
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        overflow-x: auto;
+    
+        & table:first-of-type {
+            width: 37.5%;    
+            color: #11223E;
+            mix-blend-mode: normal;
+            font-family: "Source Sans Pro";
+            text-align: center;
+            margin: 0px;
+            border-left: 1px solid rgba(34, 62, 105, .2); 
+            border-bottom: 1px solid rgba(34, 62, 105, .2);
+            display: flex;
+            
+            & thead {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            & tr {
+                display: flex;
+                flex-direction: row;          
+                border-top: 1px solid rgba(34, 62, 105, .2); 
+                border-right: 1px solid rgba(34, 62, 105, .2);
+            }
+
+            & th:first-of-type {
+                width: 75.45%;
+                flex-direction: row;
+                justify-content: left;
+                display: flex;
+                border-right: 1px solid rgba(34, 62, 105, .2);
+
+                & div {
+                    background: rgba(34, 62, 105, .1);
+                    mix-blend-mode: normal;
+                    border-radius: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border:0px;
+                    align-self: center;
+                    margin-left: 14px;
+                    margin-right: 5px;
+                    color: rgba(34, 62, 105, .0);
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    & .selected {
+                        color:rgba(53, 91, 8, 1);
+                        background: rgba(34, 62, 105, .0);
+                    }
+                    
+                }
+
+                & img {
+                    width: 20px;
+                    height: 20px;
+                    align-self: center;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+            }
+            & th {
+                width: 24.5%;
+                flex-direction: row;
+                justify-content: center;
+                display: flex;
+                margin: 0px;
+                color: rgba(17, 34, 62, .3);
+                font-weight: 100;
+                
+
+                & img {
+                    margin-left: 6px;
+                    width: 6px;
+                    height: 3px;
+                    align-self: center;
+                    cursor: pointer;
+                }
+            & p {
+                width: 45px;
+                text-align: center;
+            }
+            }
+            & td {
+                width: 24.5%;
+                font-family: $font-family;
+                font-size: 14px;
+                line-height: 8px;
+                color: #11223E;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                
+
+                & .table__second-td_squade {
+                    background: rgba(34, 62, 105, .1);
+                    mix-blend-mode: normal;
+                    border-radius: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border:0px;
+                    align-self: center;
+                    margin-left: 14px;
+                    margin-right: 20px;
+                    color: rgba(34, 62, 105, 0);
+                    justify-content: center;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                
+                }
+                & p {
+                    
+                    align-self: center;
+                }
+                & img {
+                    align-self: center;
+                    cursor: pointer;
+                }
+                & .table__second-td_star {
+                    margin-left: 34px;
+                    width: 14px;
+                    height: 14px;
+                    }
+
+                & .table__second-td_arrow-to-right {
+                        margin-left: 8px;
+                        width: 6px;
+                        height: 10px;
+                    }
+                
+            }
+        
+            & td:first-of-type {
+                width: 75.45%;
+                flex-direction: row;
+                justify-content: left;
+                display: flex;
+                border-right: 1px solid rgba(34, 62, 105, .2);
+            }        
+        
+        }
+
+        & table {
+            width: 62.5%;    
+            color: #11223E;
+            mix-blend-mode: normal;
+            font-family: "Source Sans Pro";
+            text-align: center;
+            display: flex;
+            border-bottom: 1px solid rgba(34, 62, 105, .1);
+            overflow-x: auto;
+            
+            & thead {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                overflow-x: auto;
+            }
+        
+            
+            & th {       
+                font-size: 12px;
+                line-height: 15px;
+                mix-blend-mode: normal;
+                display: flex; 
+                color: rgba(17, 34, 62, .3);  
+                font-weight: 200;         
+            }
+
+            & td {
+                font-family: $font-family;
+                font-size: 14px;
+                line-height: 8px;
+                color: #11223E;
+            }
+
+            & tr {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                border-top: 1px solid rgba(34, 62, 105, .1); 
+                border-right: 1px solid rgba(34, 62, 105, .1);
+            }
+        } 
+    
+    }
+
+    .selected {
+        color:rgba(53, 91, 8, 1) !important;
+        background: rgba(34, 62, 105, .0) !important;
     }
 }

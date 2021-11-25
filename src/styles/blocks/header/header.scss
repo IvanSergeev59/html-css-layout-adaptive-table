@@ -3,14 +3,25 @@
 
 $width: 100%;
 $margin-center: 0 auto;
-$margin-top: 40px;
-
-header {
-    margin-top: 40px;
-    height: 100px;
-    width: 92.59%;
+header {    
     margin: $margin-center;
     display: flex;
     position: relative;
-    margin-top: $margin-top;
+}
+
+
+@media (min-width: 1200px) {
+    header {
+        margin-top: 40px;
+        height: 100px;
+        width: 92.59%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    header {
+        height: 70px;
+        width: 95%;
+        margin-top: 20px;
+    }
 }

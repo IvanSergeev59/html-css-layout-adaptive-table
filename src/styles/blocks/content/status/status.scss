@@ -15,3 +15,21 @@
     z-index: 1;
     margin-bottom: 30px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .status {
+        width: 95%;    
+        background: rgba(248, 231, 28, 0.15);
+        mix-blend-mode: normal;
+        border-radius: 5px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+}

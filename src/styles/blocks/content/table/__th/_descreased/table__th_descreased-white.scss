@@ -1,0 +1,53 @@
+@media (min-width: 1200px) {
+    .table__th_descreased-white {
+        color: white;
+        font-size: 10px;
+        line-height: 8px;
+        text-align: right;
+        margin-bottom: 7px;
+        margin-right: 4px;
+
+        & img {
+            width: 6px;
+            height: 3px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+        }
+    }
+
+
+    .red {
+        color: rgba(208, 2, 27, 1)
+    }
+
+    .green {
+        color: rgba(65, 117, 5, 1);
+    }
+}
+
+@media (min-width: 768px) {
+    .table__th_descreased-white {
+        color: white;
+        font-size: 10px;
+        line-height: 8px;
+        text-align: right;
+        margin-bottom: 7px;
+        margin-right: 4px;
+
+        & img {
+            width: 6px;
+            height: 3px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+        }
+    }
+
+
+    .red {
+        color: rgba(208, 2, 27, 1)
+    }
+
+    .green {
+        color: rgba(65, 117, 5, 1);
+    }
+}

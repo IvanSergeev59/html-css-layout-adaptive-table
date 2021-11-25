@@ -1,8 +1,19 @@
-header form input{
-    padding-right: 0px;
-    padding-left: 16px;
+header form input {
     border: 0;
     display: block;
     width: 91%;
-    height: 93%;
+    height: 93%;    
+    padding-right: 0px;
+}
+
+@media (min-width: 1200px) {
+    header form input {
+        padding-left: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    header form input {
+        padding-left: 10px;
+    }
 }

@@ -1,5 +1,14 @@
 @import "status/status.scss";
 @import "table/table.scss";
-.content {
-    
+
+@media (min-width: 1200px) {
+    .content {
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .content {
+        
+    }
 }

@@ -1,10 +1,7 @@
 
-
-
 $font-family: "Source Sans Pro";
 
 header button {
-    height: 40px;
     width: 9.722%;
     background: #FFFFFF;
     border: 1px solid rgba(34, 62, 105, 0.2);
@@ -12,23 +9,29 @@ header button {
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     font-family: $font-family;
+    height: 40px;
+    width: 9.722%;
+    font-size: 14px;
+    line-height: 9px;
 }
 
 header .button-download {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 14.2%;
+    font-size: 16px;
+    line-height: 11px;
     margin-left: 23.3%;
     width: 14.2%;
     font-size: 16px;
     line-height: 11px;
-    
 }
 
 header .button-download:last-of-type {
     margin-left: 2%;
     width: 16.9%;
-  }
+}
 
 button p {
     margin: 0 auto;
@@ -45,6 +48,30 @@ button .inactive {
 header .add-button {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(252, 57, 105, 1);
-    font-size: 16px;
-    line-height: 11px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    header button {
+        height: 30px;
+        width: 15%;
+        font-size: 14px;
+        line-height: 9px;
+    }
+    header .button-download {
+        margin-left: 5%;
+        width: 20%;
+        font-size: 15px;
+        line-height: 10px;
+        
+    }
+
+    header .button-download:last-of-type {
+        margin-left: 2%;
+        width: 20%;
+    }
+ 
+    header .add-button {
+        font-size: 16px;
+        line-height: 11px;
+    }
 }

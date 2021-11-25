@@ -1,4 +1,19 @@
-.table__th {
-    width: 3%;
-   
+@import "_inceased/table__th_inceased.scss";
+@import "_descreased/table__th_descreased-white.scss";
+@media (min-width: 1200px) {
+    .table__th {
+        width: 7.14%;
+        min-width: 45px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .table__th {
+        width: 7.14%;
+        min-width: 45px;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
