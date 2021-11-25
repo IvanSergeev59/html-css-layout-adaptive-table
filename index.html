@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ivan Sergeev"> 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <title>html-css-layout-adaptive-table</title>
+  <script defer src="main.bundle.js"></script></head>
+
+  <body>
+    <div class="root">
+        <header>
+            <form class="header__form">
+              <input class="header__form_input" type="text" placeholder="Поиск по запросу">                
+            </form>
+            <button>iPhone/iPod</button>
+            <button class="inactive">iPad</button>
+            <button class="button-download">Скачать .CSV</button>
+            <button class="button-download add-button">Добавить запрос</button>
+        </header>
+        <section class="content">
+          <section class="status">
+            <div class="status__success">
+              <p>
+                45% в ТОП-3
+              </p>              
+            </div>
+            <div class="status__image">
+              <div>
+                <img src="a5c2e0e368fc5437ff4d.png" alt="status">  <p>Вы недополучаете 450 инсталлов в день</p>
+
+              </div>
+            </div>        
+          </section>
+          <section class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div id="selectAll">V</div>
+                    <img src="cbafaeb49f9cf44fb5ff.png" alt="trash">
+                    <img src="df81a4ad43a95ddd76d4.png" alt="refresh">
+                    <img src="12cd4bb4ed976a917983.png" alt="rocket">
+                  </th>
+                  <th><p>Оценка частотн.</p><img src="7c6f49c7a198a8eb55d4.png" alt="path 8"></th>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade ">V</div>
+                    <p>Тинькоф банк отзывы</p>
+                    <img src="f1ed5f2f4f3ce822edb3.png" alt="Star@2x" class="table__second-td_star">
+                    <img src="e4aa7f50a0e948b42f4e.png" alt="arrow-to-right" class="table__second-td_arrow-to-right">                   
+                  </td>
+                  <td class="table__second-td"><p>2750</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк</p> </td>
+                  <td class="table__second-td"><p>4150</p></td>
+                </tr>
+                <tr class="table__opened-tr">
+                  <td class="table__opened-td" colspan="2" ><button>Просмотреть ТОП-10</button></td>        
+                </tr>
+                <tr  class="table__opened-tr"></tr>
+                <tr  class="table__opened-tr"></tr>
+                <tr  class="table__opened-tr"></tr>
+                <tr  class="table__opened-tr"></tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк отзывы</p>
+                    <img src="379daa4ed207bca49a43.png" alt="Star gray" class="table__second-td_star">
+                    <img src="e4aa7f50a0e948b42f4e.png" alt="arrow-to-right" class="table__second-td_arrow-to-right">                   
+                  </td>
+                  <td class="table__second-td"><p>2750</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк</p> </td>
+                  <td class="table__second-td"><p>4150</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк отзывы</p>
+                    <img src="f1ed5f2f4f3ce822edb3.png" alt="Star@2x" class="table__second-td_star">
+                    <img src="e4aa7f50a0e948b42f4e.png" alt="arrow-to-right" class="table__second-td_arrow-to-right">                   
+                  </td>
+                  <td class="table__second-td"><p>2750</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк</p> </td>
+                  <td class="table__second-td"><p>4150</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк отзывы</p>
+                    <img src="ec2196a1aa93c0fdebc8.png" alt="Star empty" class="table__second-td_star">
+                    <img src="e4aa7f50a0e948b42f4e.png" alt="arrow-to-right" class="table__second-td_arrow-to-right">                   
+                  </td>
+                  <td class="table__second-td"><p>2750</p></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <div class="table__second-td_squade">V</div>
+                    <p>Тинькоф банк</p> </td>
+                  <td class="table__second-td"><p>4150</p></td>
+                </tr>                
+              </thead>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th class="table__th">
+                    <div class="table__th_descreased-white">1</div>
+                   25.06
+                    <div class="table__th_inceased">30</div>                    
+                  </th>      
+                  <th class="table__th">26.06</th>  
+                  <th class="table__th">27.06</th>  
+                  <th class="table__th">28.06</th>  
+                  <th class="table__th">29.06</th>  
+                  <th class="table__th">30.06</th>     
+                  <th class="table__th">01.07</th>   
+                  <th class="table__th">02.07</th>   
+                  <th class="table__th">03.07</th>    
+                  <th class="table__th">04.07</th> 
+                  <th class="table__th">05.07</th> 
+                  <th class="table__th">06.07</th> 
+                  <th class="table__th">07.07</th>   
+                  <th class="table__th">08.07</th> 
+                </tr>
+                <tr>
+                
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    62
+                    <div class="table__th_inceased">30</div></td>
+                  <td class="table__td">48</td>
+                  <td class="table__td">37</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">44</td>
+                  <td class="table__td">89</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">35</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">59</td>
+                  <td class="table__td">88</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">26</td>
+                  <td class="table__td">97</td>
+                </tr>
+                <tr>
+                
+                  <td class="table__td">25</td>
+                  <td class="table__td">38</td>
+                  <td class="table__td">76</td>
+                  <td class="table__td">42</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    67
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    34
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    74
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">25</td>
+                  <td class="table__td">39</td>
+                  <td class="table__td">53</td>
+                  <td class="table__td">46</td>
+                  <td class="table__td">79</td>
+                  <td class="table__td">36</td>
+                </tr>
+                <tr>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>                  
+                </tr>
+                <tr>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>                  
+                </tr>
+                <tr>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>                  
+                </tr>
+                <tr>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>                  
+                </tr>
+                <tr>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>
+                  <td class="table__td opened"><img src="73d67e8f225a3156364e.png" alt="02"></td>
+                  <td class="table__td opened"><img src="1018f7670063cf6e431c.png" alt="01"></td>
+                  <td class="table__td opened"><img src="c24957577e8db13e981d.png" alt="Rectangle 48"></td>                  
+                </tr>
+                <tr>                
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    62
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">48</td>
+                  <td class="table__td">37</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">44</td>
+                  <td class="table__td">89</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">35</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">59</td>
+                  <td class="table__td">88</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">26</td>
+                  <td class="table__td">97</td>
+                </tr>
+                <tr>                
+                  <td class="table__td">25</td>
+                  <td class="table__td">38</td>
+                  <td class="table__td">76</td>
+                  <td class="table__td">42</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    67
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    34
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    74
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">25</td>
+                  <td class="table__td">39</td>
+                  <td class="table__td">53</td>
+                  <td class="table__td">46</td>
+                  <td class="table__td">79</td>
+                  <td class="table__td green">
+                    <div class="table__th_descreased-white green"><img src="0ad5f74d4e42d78d36bc.png" alt="path 2">1</div>
+                    36
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                </tr>
+                <tr>
+                
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    62
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">48</td>
+                  <td class="table__td">37</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">44</td>
+                  <td class="table__td">89</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">35</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">59</td>
+                  <td class="table__td">88</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">26</td>
+                  <td class="table__td  green">
+                    <div class="table__th_descreased-white green">new</div>
+                    97
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                </tr>
+                <tr>
+                
+                  <td class="table__td">25</td>
+                  <td class="table__td">38</td>
+                  <td class="table__td">76</td>
+                  <td class="table__td">42</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    67
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    34
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    74
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">25</td>
+                  <td class="table__td">39</td>
+                  <td class="table__td">53</td>
+                  <td class="table__td">46</td>
+                  <td class="table__td">79</td>
+                  <td class="table__td">36</td>
+                </tr>
+                <tr>                
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    62
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">48</td>
+                  <td class="table__td">37</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">44</td>
+                  <td class="table__td">89</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">35</td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">59</td>
+                  <td class="table__td">88</td>
+                  <td class="table__td">74</td>
+                  <td class="table__td">26</td>
+                  <td class="table__td red">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    97
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                </tr>
+                <tr>
+                
+                  <td class="table__td">25</td>
+                  <td class="table__td">38</td>
+                  <td class="table__td">76</td>
+                  <td class="table__td">42</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    67
+                    <div class="table__th_inceased">30</div>
+                  </td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    34
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">62</td>
+                  <td class="table__td">
+                    <div class="table__th_descreased-white red"><img src="103e293247bad3a71763.png" alt="path 1">1</div>
+                    74
+                    <div class="table__th_inceased white">30</div>
+                  </td>
+                  <td class="table__td">25</td>
+                  <td class="table__td">39</td>
+                  <td class="table__td">53</td>
+                  <td class="table__td">46</td>
+                  <td class="table__td">79</td>
+                  <td class="table__td">36</td>
+                </tr>
+              </thead>
+            </table>
+          </section>
+        </section>
+    </div>
+    
+  </body>
+</html>
