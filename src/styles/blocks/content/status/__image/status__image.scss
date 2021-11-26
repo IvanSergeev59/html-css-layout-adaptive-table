@@ -35,3 +35,46 @@
     height: 16px;
     align-items: center;
 }
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .status__image {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        margin-left: 0%;
+        height: 40%;
+        margin-top: 10px;
+        width: 50%;
+    }
+    
+    .status__image img{
+        width:12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        margin-top:3px;
+        box-sizing: border-box;
+        
+    }
+    
+    .status__image div {
+        display: flex;    
+        flex-direction: row;
+    }
+    
+    
+    .status__image p {
+        margin: 0 auto;
+        margin-left: 2%;
+        display: flex;
+        font-family: "Source Sans Pro";
+        font-size: 12px;
+        line-height: 8px;
+        color: #11223E;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        height: 16px;
+        align-items: none;
+        text-align: center;
+    }
+}

@@ -1,270 +1,258 @@
 @import "__th/table__th.scss";
 @import "__td/table__td.scss";
 @import "__opened-td/table__opened-td.scss";
-@import "__opened-tr/table__opened-tr.scss";
 
-@media (min-width: 1200px) {
-    .table {
-        width: 92.59%;  
-        display: flex;        
-        margin: 0 auto;
-        justify-content: space-between;
-        margin-bottom: 40px;
+.table {
+    width: 92.59%;  
+    display: flex;        
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
         
     
-        & table:first-of-type {
-            width: 37.5%;    
-            color: #11223E;
-            mix-blend-mode: normal;
-            font-family: "Source Sans Pro";
-            text-align: center;
-            margin: 0px;
-            border-left: 1px solid rgba(34, 62, 105, .2); 
-            border-bottom: 1px solid rgba(34, 62, 105, .2);
-            display: flex;
+    & table:first-of-type {
+        width: 37.5%;    
+        color: #11223E;
+        mix-blend-mode: normal;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        margin: 0px;
+        display: flex;        
+        border-bottom: 1px solid rgba(34, 62, 105, .2);
+        border-left: 1px solid rgba(34, 62, 105, .2);
+        border-right: 1px solid rgba(34, 62, 105, .2);
             
-            & thead {
-                width: 100%;
+        & thead {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & tr {
+            display: flex;
+            flex-direction: row;   
+        }
+
+        & .border-right{
+            border-right: 1px solid rgba(34, 62, 105, .2) !important;
+        }
+
+        & th:first-of-type {
+            width: 75.45%;
+            flex-direction: row;
+            justify-content: left;
+            display: flex;
+
+            & div {
+                background: rgba(34, 62, 105, .1);
+                mix-blend-mode: normal;
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+                border:0px;
+                align-self: center;
+                margin-left: 4.94%;
+                margin-right: 1.3%;
+                color: rgba(34, 62, 105, .0);
+                text-align: center;
+                justify-content: center;
+                font-size: 25px;
                 display: flex;
                 flex-direction: column;
-            }
+                cursor: pointer;
 
-            & tr {
-                display: flex;
-                flex-direction: row;          
-                border-top: 1px solid rgba(34, 62, 105, .2); 
-                border-right: 1px solid rgba(34, 62, 105, .2);
-            }
-
-            & th:first-of-type {
-                width: 75.45%;
-                flex-direction: row;
-                justify-content: left;
-                display: flex;
-                border-right: 1px solid rgba(34, 62, 105, .2);
-
-                & div {
-                    background: rgba(34, 62, 105, .1);
-                    mix-blend-mode: normal;
-                    border-radius: 5px;
-                    width: 20px;
-                    height: 20px;
-                    border:0px;
-                    align-self: center;
-                    margin-left: 14px;
-                    margin-right: 5px;
-                    color: rgba(34, 62, 105, .0);
-                    text-align: center;
-                    justify-content: center;
-                    font-size: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    cursor: pointer;
-
-                    & .selected {
-                        color:rgba(53, 91, 8, 1);
-                        background: rgba(34, 62, 105, .0);
-                    }
+                & .selected {
+                    color:rgba(53, 91, 8, 1);
+                    background: rgba(34, 62, 105, .0);
+                }
                     
-                }
-
-                & img {
-                    width: 20px;
-                    height: 20px;
-                    align-self: center;
-                    margin-left: 15px;
-                    cursor: pointer;
-                }
             }
-            & th {
-                width: 24.5%;
-                flex-direction: row;
-                justify-content: center;
-                display: flex;
-                margin: 0px;
-                color: rgba(17, 34, 62, .3);
-                font-weight: 100;
-                
 
-                & img {
-                    margin-left: 6px;
-                    width: 6px;
-                    height: 3px;
-                    align-self: center;
-                    cursor: pointer;
-                }
+            & img {
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+        & th {
+            width: 24.5%;
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+            margin: 0px;
+            color: rgba(17, 34, 62, .3);
+            font-weight: 100;
+            border-top: 1px solid rgba(34, 62, 105, .2);
+
+           
+            
+            & img {
+                margin-left: 6px;
+                width: 6px;
+                height: 3px;
+                align-self: center;
+                cursor: pointer;
+            }
+
             & p {
                 width: 45px;
                 text-align: center;
             }
-            }
-            & td {
-                width: 24.5%;
-                font-family: $font-family;
-                font-size: 14px;
-                line-height: 8px;
-                color: #11223E;
-                flex-direction: column;
-                justify-content: center;
-                display: flex;
-                
+        }
+        & td {
+            width: 24.5%;
+            font-family: $font-family;
+            font-size: 14px;
+            line-height: 8px;
+            color: #11223E;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            border-top: 1px solid rgba(34, 62, 105, .2);
 
-                & .table__second-td_squade {
-                    background: rgba(34, 62, 105, .1);
-                    mix-blend-mode: normal;
-                    border-radius: 5px;
-                    width: 20px;
-                    height: 20px;
-                    border:0px;
-                    align-self: center;
-                    margin-left: 14px;
-                    margin-right: 20px;
-                    color: rgba(34, 62, 105, 0);
-                    justify-content: center;
-                    font-size: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    cursor: pointer;
-                
-                }
-                & p {
-                    
-                    align-self: center;
-                }
-                & img {
-                    align-self: center;
-                    cursor: pointer;
-                }
-                & .table__second-td_star {
-                    margin-left: 34px;
-                    width: 14px;
-                    height: 14px;
-                    }
-
-                & .table__second-td_arrow-to-right {
-                        margin-left: 8px;
-                        width: 6px;
-                        height: 10px;
-                    }
-                
-            }
-        
-            & td:first-of-type {
-                width: 75.45%;
-                flex-direction: row;
-                justify-content: left;
-                display: flex;
+            & .border-right {
                 border-right: 1px solid rgba(34, 62, 105, .2);
-            }        
+            }
+                
+            & .table__second-td_squade {
+                background: rgba(34, 62, 105, .1);
+                mix-blend-mode: normal;
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+                border:0px;
+                align-self: center;
+                margin-left: 5%;
+                margin-right: 7%;
+                color: rgba(34, 62, 105, 0);
+                justify-content: center;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+            }
+            & p {
+                    
+                align-self: center;
+            }
+            & img {
+                align-self: center;
+                cursor: pointer;
+            }
+            & .table__second-td_star {
+                margin-left: 34px;
+                width: 14px;
+                height: 14px;
+                }
+
+            & .table__second-td_arrow-to-right {
+                    margin-left: 8px;
+                    width: 6px;
+                    height: 10px;
+                }
+                
+        }
         
+        & td:first-of-type {
+            width: 75.45%;
+            flex-direction: row;
+            justify-content: left;
+            display: flex;
+        }        
+        
+    }
+
+    & table {
+        width: 62.5%;    
+        color: #11223E;
+        mix-blend-mode: normal;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        display: flex;
+        overflow-x: auto;
+        border-bottom: 1px solid rgba(34, 62, 105, .1);
+            
+        & thead {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        
+            
+        & th {       
+            font-size: 12px;
+            line-height: 15px;
+            mix-blend-mode: normal;
+            display: flex; 
+            color: rgba(17, 34, 62, .3);  
+            font-weight: 200;        
+            border-top: 1px solid rgba(34, 62, 105, .1);
         }
 
-        & table {
-            width: 62.5%;    
+        & td {
+            font-family: $font-family;
+            font-size: 14px;
+            line-height: 8px;
             color: #11223E;
-            mix-blend-mode: normal;
-            font-family: "Source Sans Pro";
-            text-align: center;
+        }
+
+        & tr {
+            height: 50px;
             display: flex;
-            border-bottom: 1px solid rgba(34, 62, 105, .1);
-            
-            & thead {
-                display: flex;
-                width: 100%;
-                flex-direction: column;
-            }
-        
-            
-            & th {       
-                font-size: 12px;
-                line-height: 15px;
-                mix-blend-mode: normal;
-                display: flex; 
-                color: rgba(17, 34, 62, .3);  
-                font-weight: 200;         
-            }
-
-            & td {
-                font-family: $font-family;
-                font-size: 14px;
-                line-height: 8px;
-                color: #11223E;
-            }
-
-            & tr {
-                height: 50px;
-                display: flex;
-                flex-direction: row;
-                border-top: 1px solid rgba(34, 62, 105, .1); 
-                border-right: 1px solid rgba(34, 62, 105, .1);
-            }
-        } 
+            flex-direction: row;
+           
+        }
+    } 
     
-    }
-
-    .selected {
-        color:rgba(53, 91, 8, 1) !important;
-        background: rgba(34, 62, 105, .0) !important;
-    }
 }
 
-@media (min-width: 768px) {
+.selected {
+    color:rgba(53, 91, 8, 1) !important;
+    background: rgba(34, 62, 105, .0) !important;
+    }
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
     .table {
-        width: 92.59%;  
-        display: flex;        
-        margin: 0 auto;
-        justify-content: space-between;
+        width: 95%;
         margin-bottom: 40px;
         overflow-x: auto;
     
         & table:first-of-type {
             width: 37.5%;    
-            color: #11223E;
-            mix-blend-mode: normal;
-            font-family: "Source Sans Pro";
             text-align: center;
             margin: 0px;
-            border-left: 1px solid rgba(34, 62, 105, .2); 
-            border-bottom: 1px solid rgba(34, 62, 105, .2);
-            display: flex;
             
             & thead {
                 width: 100%;
-                display: flex;
                 flex-direction: column;
+                overflow-x: auto;
             }
 
             & tr {
-                display: flex;
                 flex-direction: row;          
-                border-top: 1px solid rgba(34, 62, 105, .2); 
-                border-right: 1px solid rgba(34, 62, 105, .2);
+               
             }
 
             & th:first-of-type {
                 width: 75.45%;
                 flex-direction: row;
                 justify-content: left;
-                display: flex;
-                border-right: 1px solid rgba(34, 62, 105, .2);
 
                 & div {
                     background: rgba(34, 62, 105, .1);
-                    mix-blend-mode: normal;
                     border-radius: 5px;
                     width: 20px;
                     height: 20px;
                     border:0px;
                     align-self: center;
-                    margin-left: 14px;
-                    margin-right: 5px;
                     color: rgba(34, 62, 105, .0);
                     text-align: center;
-                    justify-content: center;
+                    justify-content: left;
                     font-size: 25px;
-                    display: flex;
                     flex-direction: column;
-                    cursor: pointer;
 
                     & .selected {
                         color:rgba(53, 91, 8, 1);
@@ -278,28 +266,23 @@
                     height: 20px;
                     align-self: center;
                     margin-left: 15px;
-                    cursor: pointer;
                 }
             }
             & th {
                 width: 24.5%;
                 flex-direction: row;
                 justify-content: center;
-                display: flex;
-                margin: 0px;
-                color: rgba(17, 34, 62, .3);
-                font-weight: 100;
+                margin: 0px;;
                 
 
                 & img {
-                    margin-left: 6px;
+                    margin-left: 12px;
                     width: 6px;
                     height: 3px;
                     align-self: center;
-                    cursor: pointer;
                 }
             & p {
-                width: 45px;
+                width: 35px;
                 text-align: center;
             }
             }
@@ -322,8 +305,6 @@
                     height: 20px;
                     border:0px;
                     align-self: center;
-                    margin-left: 14px;
-                    margin-right: 20px;
                     color: rgba(34, 62, 105, 0);
                     justify-content: center;
                     font-size: 25px;
@@ -333,15 +314,15 @@
                 
                 }
                 & p {
-                    
-                    align-self: center;
+                    font-size: 12px;
+                    line-height: 7px;
                 }
                 & img {
                     align-self: center;
                     cursor: pointer;
                 }
                 & .table__second-td_star {
-                    margin-left: 34px;
+                    margin-left: 5%;
                     width: 14px;
                     height: 14px;
                     }
@@ -359,7 +340,6 @@
                 flex-direction: row;
                 justify-content: left;
                 display: flex;
-                border-right: 1px solid rgba(34, 62, 105, .2);
             }        
         
         }
@@ -371,14 +351,11 @@
             font-family: "Source Sans Pro";
             text-align: center;
             display: flex;
-            border-bottom: 1px solid rgba(34, 62, 105, .1);
             overflow-x: auto;
             
             & thead {
-                display: flex;
-                width: 100%;
+                
                 flex-direction: column;
-                overflow-x: auto;
             }
         
             
@@ -392,25 +369,157 @@
             }
 
             & td {
-                font-family: $font-family;
                 font-size: 14px;
                 line-height: 8px;
                 color: #11223E;
             }
 
             & tr {
+                width: 100%;
                 height: 50px;
-                display: flex;
-                flex-direction: row;
-                border-top: 1px solid rgba(34, 62, 105, .1); 
-                border-right: 1px solid rgba(34, 62, 105, .1);
+             
             }
         } 
     
     }
 
-    .selected {
-        color:rgba(53, 91, 8, 1) !important;
-        background: rgba(34, 62, 105, .0) !important;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .table {
+        width: 98%;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    
+        & table:first-of-type {
+            width: 37.5%;    
+            color: #11223E;
+            margin: 0px;
+            
+            & thead {
+                flex-direction: column;
+                overflow-x: auto;
+            }
+
+            & tr {
+                display: flex;
+                flex-direction: row;   
+               
+            }
+
+            & th:first-of-type {
+                flex-direction: row;
+                justify-content: left;
+
+                & div {
+                    border-radius: 5px;
+                    width: 15px;
+                    height: 15px;
+                    border:0px;
+                    color: rgba(34, 62, 105, .0);
+
+                    & .selected {
+                        color:rgba(53, 91, 8, 1);
+                        background: rgba(34, 62, 105, .0);
+                    }
+                    
+                }
+
+                & img {
+                    width: 15px;
+                    height: 15px;
+                    align-self: center;
+                    margin-left: 15px;
+                    cursor: pointer;
+                }
+            }
+            & th {
+                width: 24.5%;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                margin: 0px;
+                color: rgba(17, 34, 62, .3);
+                font-weight: 100;
+                font-size: 10px;
+                line-height: 7px;
+
+                & p {
+                    width: 100%;
+                }
+                & img {
+                    width: 4px;
+                    height: 2px;
+                    align-self: center;
+                    cursor: pointer;
+                    
+                    
+                }
+               .img-margin {
+                    margin-bottom: 4px;
+                } 
+            }
+            & td {
+                width: 24.5%;
+                font-size: 12px;
+                line-height: 10px;
+                flex-direction: column;
+                justify-content: center;
+                
+
+                & .table__second-td_squade {
+                    border-radius: 5px;
+                    width: 15px;
+                    height: 15px;
+                    border:0px;
+                    align-self: center;
+                    color: rgba(34, 62, 105, 0);
+                    justify-content: center;
+                    font-size: 25px;
+                
+                }
+                & p {
+                    font-size: 10px;
+                    line-height: 7px;
+                    width:60%;
+                }
+                
+                & .table__second-td_star {
+                    margin-left: 0%;
+                    width: 10px;
+                    height: 10px;
+                    }
+
+                & .table__second-td_arrow-to-right {
+                        margin-left: 5px;
+                        width: 3px;
+                        height: 5px;
+                    }
+                
+            }
+                 
+        }
+
+        & table {             
+            
+            & th {       
+                font-size: 10px;
+                line-height: 7px;        
+            }
+
+            & td {
+                font-family: $font-family;
+                font-size: 10px;
+                line-height: 7px;
+            }
+
+            & tr {
+                width: 100%;
+                height: 35px;
+             
+            }
+        } 
+    
     }
+
 }

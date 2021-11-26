@@ -7,17 +7,9 @@
     border: 1px solid rgba(17, 34, 62, 0.05);
     box-sizing: border-box;
     border-radius: 5px;
-}
-
-@media (min-width: 1200px) {
-    .root {     
-        margin-top: 83px;
-        max-width: 1896px;
-        width: 88.8%;
-        
-        
-     
-    }
+    margin-top: 83px;
+    max-width: 1896px;
+    width: 88.8%;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -25,6 +17,15 @@
         max-width: 1200px;  
         width: 95%;
         margin-top: 40px;
+           
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .root {
+        max-width: 768px;  
+        width: 100%;
+        margin-top: 10px;
            
     }
 }

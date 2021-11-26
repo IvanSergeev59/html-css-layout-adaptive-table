@@ -1,32 +1,43 @@
-@media (min-width: 1200px) {
-    .table__td {
-        width: 7.14%;
-        min-width: 45px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        
-        &.green {
-            background: #FAFFEE;;
-        }
+.table__td:first-of-type { 
+}    
 
-        &.red {
-            background: #FFF6F6;
-        }
+.table__td {
+    width: 7.14%;
+    min-width: 45px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(34, 62, 105, .1);
+    border-right: 1px solid rgba(34, 62, 105, .1);
 
-        &.opened {
-        border: 0px;
-
-            & img {
-                width: 24px;
-                height: 24px;
-                align-self: center;
-            }
-        }
+    &.border-top {
+        border-top: 1px solid rgba(34, 62, 105, .1) !important;
     }
+
+    &.border-right {
+        border-right: 1px solid rgba(34, 62, 105, .1) !important;
+    }
+     
+    &.green {
+        background: #FAFFEE;;
+    }
+
+    &.red {
+        background: #FFF6F6;
+    }
+
+    &.opened {      
+        border-right: 1px solid rgba(34, 62, 105, 0);
+        & img {
+            width: 24px;
+            height: 24px;
+            align-self: center;
+        }
+     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+    
     .table__td {
         width: 7.14%;
         min-width: 45px;
@@ -43,7 +54,6 @@
         }
 
         &.opened {
-        border: 0px;
 
             & img {
                 width: 24px;

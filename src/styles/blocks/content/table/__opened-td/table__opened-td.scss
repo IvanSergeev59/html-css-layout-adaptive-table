@@ -1,49 +1,47 @@
-@media (min-width: 1200px) {
-        .table__opened-td {
-                width: 100% !important;
-                border-right: 0px !important;
-                
+.table__opened-td {
+        width: 100% !important;
+        border-right: 0px !important;
 
-                & button {
-                        width: 174px;
+        & button {
+                width: 46.64%;
+                height: 32px;
+                font-size: 14px;
+                line-height: 10px;
+                font-family: "Source Sans Pro";
+                margin-left: 14.47%;
+                margin-top: 20px;
+                mix-blend-mode: normal;
+                border: 1px solid rgba(34, 62, 105, .2);
+                box-sizing: border-box;
+                border-radius: 5px;
+                background: white;
+                font-weight: 600;
+                cursor: pointer;
+        }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+        .table__opened-td {           
+
+                & button {           
+                        width: 50%;             
                         height: 32px;
-                        font-size: 14px;
-                        line-height: 10px;
-                        font-family: "Source Sans Pro";
-                        margin-left: 14.47%;
-                        margin-top: 20px;
-                        mix-blend-mode: normal;
-                        border: 1px solid rgba(34, 62, 105, .2);
-                        box-sizing: border-box;
-                        border-radius: 5px;
-                        background: white;
-                        font-weight: 600;
-                        cursor: pointer;
+                        font-size: 12px;
+                        line-height: 7px;
                 }
         }
 }
 
-@media (min-width: 768px) {
-        .table__opened-td {
-                width: 100% !important;
-                border-right: 0px !important;
-                
+@media (min-width: 360px) and (max-width: 768px) {
+        .table__opened-td {           
 
-                & button {
-                        width: 174px;
-                        height: 32px;
-                        font-size: 14px;
-                        line-height: 10px;
-                        font-family: "Source Sans Pro";
-                        margin-left: 14.47%;
-                        margin-top: 20px;
-                        mix-blend-mode: normal;
-                        border: 1px solid rgba(34, 62, 105, .2);
-                        box-sizing: border-box;
-                        border-radius: 5px;
-                        background: white;
-                        font-weight: 600;
-                        cursor: pointer;
+                & button {           
+                        width: 60%;             
+                        height: 20px;
+                        font-size: 10px;
+                        line-height: 7px;
+                        margin-top: 10px;
                 }
         }
 }

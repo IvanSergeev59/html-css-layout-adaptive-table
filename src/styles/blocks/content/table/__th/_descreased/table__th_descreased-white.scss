@@ -1,53 +1,42 @@
-@media (min-width: 1200px) {
-    .table__th_descreased-white {
-        color: white;
-        font-size: 10px;
-        line-height: 8px;
-        text-align: right;
-        margin-bottom: 7px;
-        margin-right: 4px;
+.table__th_descreased-white {
+    color: white;
+    font-size: 10px;
+    line-height: 8px;
+    text-align: right;
+    margin-bottom: 7px;
+    margin-right: 4px;
 
-        & img {
-            width: 6px;
-            height: 3px;
-            margin-right: 1px;
-            margin-bottom: 1px;
-        }
-    }
-
-
-    .red {
-        color: rgba(208, 2, 27, 1)
-    }
-
-    .green {
-        color: rgba(65, 117, 5, 1);
+    & img {
+        width: 6px;
+        height: 3px;
+        margin-right: 1px;
+        margin-bottom: 1px;
     }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 360px) and (max-width: 768px) {
     .table__th_descreased-white {
         color: white;
-        font-size: 10px;
-        line-height: 8px;
+        font-size: 7px;
+        line-height: 5px;
         text-align: right;
-        margin-bottom: 7px;
-        margin-right: 4px;
+        margin-bottom: 3px;
+        margin-right: 9px;
 
         & img {
             width: 6px;
             height: 3px;
-            margin-right: 1px;
+            margin-right: 2px;
             margin-bottom: 1px;
         }
     }
+}
 
+.red {
+    color: rgba(208, 2, 27, 1)
+}
 
-    .red {
-        color: rgba(208, 2, 27, 1)
-    }
-
-    .green {
-        color: rgba(65, 117, 5, 1);
-    }
+.green {
+    color: rgba(65, 117, 5, 1);
 }

@@ -1,5 +1,3 @@
-
-import icon from './images/icon.png'
 import './styles/main.scss'
 const allSelectedItems = document.getElementsByClassName('table__second-td_squade')
 const selectedItem = document.getElementById('selectAll');
