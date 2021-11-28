@@ -13,6 +13,7 @@ header button {
     width: 9.722%;
     font-size: 14px;
     line-height: 9px;
+    text-align: center;
 }
 
 header .button-download {
@@ -74,13 +75,13 @@ header .add-button {
     header button {
         height: 20px;
         width: 15%;
-        font-size: 10px;
+        font-size: 9px;
         line-height: 7px;
     }
     header .button-download {
-        margin-left: 5%;
+        margin-left: 2%;
         width: 20%;
-        font-size: 10px;
+        font-size: 9px;
         line-height: 7px;
         
     }
@@ -91,7 +92,7 @@ header .add-button {
     }
  
     header .add-button {
-        font-size: 10px;
+        font-size: 9px;
         line-height: 7px;
     }
 }

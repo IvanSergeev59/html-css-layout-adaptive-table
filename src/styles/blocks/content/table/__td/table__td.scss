@@ -9,6 +9,7 @@
     flex-direction: column;
     border-top: 1px solid rgba(34, 62, 105, .1);
     border-right: 1px solid rgba(34, 62, 105, .1);
+    
 
     &.border-top {
         border-top: 1px solid rgba(34, 62, 105, .1) !important;
@@ -28,11 +29,16 @@
 
     &.opened {      
         border-right: 1px solid rgba(34, 62, 105, 0);
+        cursor: pointer;
         & img {
             width: 24px;
             height: 24px;
             align-self: center;
         }
+     }
+     &.focused {      
+        background: rgba(248, 231, 28, .2);
+
      }
 }
 
